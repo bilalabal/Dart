@@ -22,7 +22,7 @@ extension Defaultvalues<T> on T? {
       case double:
         return 0.0 as T;
       case String:
-        return '' as T;
+        return ' ' as T;
       case bool:
         return false as T;
       default:
