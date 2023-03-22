@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 void main(List<String> args) {
   const names = ['Fatima', 'Bilal', 'Ummi', 'Salma'];
   var counter = 0;

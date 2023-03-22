@@ -1,17 +1,22 @@
 void main(List<String> args) {
-  String? lastName;
+  String? lastName; // Declare a nullable string called 'lastName'
 
   void changeLastName() {
-    lastName = 'Bar';
+    // Declare a function called 'changeLastName'
+    lastName = 'Bar'; // Assign 'lastName' the value of 'Bar'
   }
 
-  changeLastName();
+  changeLastName(); // Call the 'changeLastName' function
 
   if (lastName?.contains('Bar') ?? false) {
-    print('Last name contain Bar');
+    // Check if 'lastName' contains 'Bar', or return false if 'lastName' is null
+    print(
+        'Last name contain Bar'); // Print a message indicating that 'lastName' contains 'Bar'
   }
 
   if (lastName?.contains('Bar') == true) {
-    print('Last name contain Bar');
+    // Check if 'lastName' contains 'Bar', or return false if 'lastName' is null
+    print(
+        'Last name contain Bar'); // Print a message indicating that 'lastName' contains 'Bar'
   }
 }

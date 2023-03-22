@@ -100,14 +100,26 @@ void main(List<String> args) {
   print(totalLength);
   print('---------------------');
 
+  // The `fold` method is being called on the `names` iterable.
+// It will iterate over each element in `names`, accumulating a result
+// as it goes.
   final result = names.fold(
+    // The initial value of the accumulator is an empty string.
     '',
-    (
-      result,
-      str,
-    ) =>
+
+    // This is the function that will be applied to each element in `names`.
+    // It takes two arguments: the current accumulator value (result) and
+    // the current element (str).
+    (result, str) =>
+
+        // The current element is converted to uppercase and added to the
+        // accumulator (result), separated by a space.
         '$result ${str.toUpperCase()}',
   );
+
+// The final result is a string that contains all the elements of `names`
+// in uppercase, separated by spaces.
+
   print(result);
   print('---------------------');
 }

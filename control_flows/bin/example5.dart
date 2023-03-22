@@ -7,6 +7,8 @@ void main(List<String> args) {
   describe("Hello");
 }
 
+/// This function takes a value of any type and
+/// prints out a description of its data type.
 void describe<T>(T value) {
   switch (T) {
     case int:
